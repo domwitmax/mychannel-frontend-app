@@ -1,0 +1,15 @@
+<div class="menuWrapper">
+    <div class="menu">
+        <span (click)="menuButton.emit()" class="menuButton"><i class="material-icons">menu</i></span>
+    </div>
+</div>
+<div class="searchBar">
+    <div class="search"><input type="search" (keyup.enter)="find()" [(ngModel)]="search" /></div>
+    <button class="btn btn-search" (click)="find()"><i class="material-icons">search</i></button>
+</div>
+<div *ngIf="isLogged()" class="auth" (click)="logout()">
+    <button class="btn btn-auth">Wyloguj się</button>
+</div>
+<div *ngIf="!isLogged()" class="auth" routerLink="/login">
+    <button class="btn btn-auth">Zaloguj się</button>
+</div>

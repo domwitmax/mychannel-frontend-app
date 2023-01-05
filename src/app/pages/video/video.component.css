@@ -1,0 +1,148 @@
+.videoContainer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 5%;
+}
+
+.videoPlayer {
+    width: 90%;
+    height: 80%;
+    margin-bottom: 2%;
+}
+
+.infoVideo {
+    width: 90%;
+    height: 20%;
+}
+
+.likes {
+    width: 50%;
+    height: 67%;
+    float: left;
+    padding-left: 5%;
+    color: whitesmoke;
+}
+
+.like {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.dislike {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.likeText,
+.dislikeText {
+    font-size: 1.9rem;
+    margin-left: 5%;
+}
+
+.subscription, .deleteVideo, .subscribeContainer {
+    width: 50%;
+    height: 67%;
+    float: left;
+}
+
+.subscriptionBtn {
+    width: 80%;
+    height: 80%;
+    margin: 1.2% 10% 1.2% 10%;
+}
+
+.viewsContainer {
+    width: 50%;
+    height: 33%;
+    float: left;
+    padding-left: 2%;
+    color: whitesmoke;
+}
+
+.views {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.subscriptionCountContainer {
+    width: 50%;
+    height: 33%;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.subscriptionCount {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+.deleteVideoBtn {
+    width: 80%;
+    height: 80%;
+    margin: 1.2% 10% 1.2% 10%;
+}
+
+.subscribeBtn{
+    width: 80%;
+    height: 80%;
+    margin: 1.2% 10% 1.2% 10%;
+}
+
+.addComment {
+    margin-top: 2%;
+    width: 90%;
+    height: 30%;
+}
+
+.textContent {
+    width: 100%;
+    height: 80%;
+    color: white;
+    resize: none;
+}
+
+.addCommentBtn {
+    width: 35%;
+    height: 20%;
+    float: right;
+}
+
+.commentHeader{
+    color: white;
+    width: 90%;
+    text-align: center;
+}
+
+.commentItem {
+    width: 90%;
+}
+
+.whiteBtn {
+    color: white;
+}
+
+.blackBtn {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #37474f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #263238;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111;
+}

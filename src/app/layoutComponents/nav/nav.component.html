@@ -1,0 +1,19 @@
+<div class="nav_list">
+  <div class="collection_list" *ngIf="isListOfSubscriptions()">
+    <app-nav-item *ngFor="let subscription of subscriptions" [data]="subscription"></app-nav-item>
+  </div>
+  <div class="collection_empty" *ngIf="isEmptyListOfSubscriptions()">
+    <div class="empty">
+      Brak subskrypcji
+    </div>
+  </div>
+  <div class="collection_not_logged" *ngIf="isNotLogged()">
+    <div class="auth" routerLink="/login">
+      <button class="btn btn-auth">Zaloguj się</button>
+    </div>
+  </div>
+</div>
+<div *ngIf="isLogged" class="add_video">
+  <button routerLink="/changePassword" class="btn">Zmień hasło</button>
+  <button routerLink="/addVideo" class="btn">Dodaj wideo</button>
+</div>

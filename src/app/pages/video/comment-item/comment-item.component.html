@@ -1,0 +1,9 @@
+<div class="commentContainer">
+    <div class="infoData">
+        <div class="authorName">{{ data?.userName }}</div>
+        <div class="date">{{ data?.created | date:'dd/MM/yyyy HH:mm:ss' }}</div>
+    </div>
+    <div class="comment">
+        <span class="commentText">{{ data?.content }}</span>
+    </div>
+</div>

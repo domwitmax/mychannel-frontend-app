@@ -1,0 +1,39 @@
+.menuWrapper, .menu, .home, .searchBar, .auth{
+    float: left;
+    padding: 0;
+    height: 100%;
+}
+.menu{
+    width: 60px;
+}
+.menuWrapper{
+    width: 200px;
+}
+.menuButton > i{
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+}
+.searchBar{
+    width: calc(90% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    width: 80%;
+}
+.btn-search{
+    margin-left: 10px;
+    width: 5%;
+}
+.auth{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-auth{
+    width: 70%;
+}

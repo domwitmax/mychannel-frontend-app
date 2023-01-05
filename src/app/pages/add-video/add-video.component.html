@@ -1,0 +1,27 @@
+<form id="fullVideoForm" (submit)="sendVideo()">
+    <div class="input-field col s12">
+        <input id="title" [(ngModel)]="title" name="title" type="text" class="validate">
+        <label for="title">Tytuł</label>
+    </div>
+    <div class="file-field input-field col s12">
+        <div class="btn">
+            <span>Załaduj plik wideo</span>
+            <input id="videoPath" (change)="videoEvent($event)" name="videoPath" type="file">
+        </div>
+        <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+        </div>
+    </div>
+    <div class="file-field input-field col s12">
+        <div class="btn">
+            <span>Załaduj miniaturkę</span>
+            <input id="thumbnailPath" (change)="thumbnailEvent($event)" name="thumbnailPath" type="file">
+        </div>
+        <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+        </div>
+    </div>
+    <div class="col s12">
+        <button class="btn waves-effect waves-light" type="submit">Wyślij <i class="material-icons right">send</i></button>
+    </div>
+</form>

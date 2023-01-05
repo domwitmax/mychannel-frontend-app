@@ -1,0 +1,14 @@
+.loginWrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    padding-bottom: 70px;
+}
+.button{
+    height: auto;
+    float: left;
+    margin: 5px;
+}
