@@ -1,0 +1,45 @@
+<div class="videoContainer">
+    <video class="videoPlayer" controls [src]="source" [currentTime]="currentTime"></video>
+    <div class="infoVideo">
+        <div class="likes">
+            <div class="like" (click)="liked()">
+                <i *ngIf="isLiked" class="material-icons blackBtn">thumb_up</i>
+                <i *ngIf="!isLiked" class="material-icons whiteBtn">thumb_up</i>
+                <span class="likeText">{{ like }}</span>
+            </div>
+            <div class="dislike" (click)="disliked()">
+                <i *ngIf="isDisLiked" class="material-icons blackBtn">thumb_down</i>
+                <i *ngIf="!isDisLiked" class="material-icons whiteBtn">thumb_down</i>
+                <span class="dislikeText">{{ dislike }}</span>
+            </div>
+        </div>
+        <div *ngIf="!isAuthor && isLogged" class="subscription">
+            <button (click)="subscribe()" class="btn subscriptionBtn">{{ isSubscribe?"Subskrybujesz":"Subskrybuj"
+                }}</button>
+        </div>
+        <div *ngIf="isAuthor && isLogged" class="deleteVideo">
+            <button (click)="deleteVideo()" class="btn red darken-4 deleteVideoBtn">
+                Usuń wideo
+            </button>
+        </div>
+        <div *ngIf="!isLogged" class="subscribeContainer">
+            <button (click)="login()" class="btn subscribeBtn">
+                Zaloguj się
+            </button>
+        </div>
+        <div class="viewsContainer">
+            <span class="views">{{ views }} wyświetleń</span>
+        </div>
+        <div class="subscriptionCountContainer">
+            <span class="subscriptionCount">{{ subscriptionCount }} subskrypcji</span>
+        </div>
+    </div>
+    <form *ngIf="isLogged" class="addComment">
+        <textarea placeholder="Wpisz komentarz" [(ngModel)]="commentText" name="commentText"
+            class="textContent"></textarea>
+        <button class="addCommentBtn btn" (click)="sendComment()">Wyślij komentarz <i
+                class="material-icons right">send</i></button>
+    </form>
+    <h2 class="commentHeader">Komentarze:</h2>
+    <app-comment-item *ngFor="let comment of comments" class="commentItem" [data]="comment"></app-comment-item>
+</div>

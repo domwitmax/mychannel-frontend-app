@@ -1,0 +1,45 @@
+<div class="loginWrapper">
+    <form *ngIf="!showRegistration" (submit)="onLoginSubmit()">
+        <label>
+            Nazwa użytkownika:
+            <input type="text" [(ngModel)]="userName" name="userName" required>
+        </label>
+        <br>
+        <label>
+            Password:
+            <input type="password" [(ngModel)]="password" name="password" required>
+        </label>
+        <br>
+        <button class="button btn-large" type="submit">Zaloguj się</button>
+    </form>
+    <button *ngIf="!showRegistration" class="button btn-large" (click)="toggleRegistration()">
+        Zajerestruj się
+    </button>
+    <div *ngIf="showRegistration">
+        <form (submit)="onRegistrationSubmit()">
+            <label>
+                Nazwa użytkownika:
+                <input type="text" [(ngModel)]="userName" name="name" required>
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email" [(ngModel)]="email" name="email" required>
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" [(ngModel)]="password" name="password" required>
+            </label>
+            <br>
+            <div class="button">
+                <button class="btn-large" type="submit">Zajerestruj się</button>
+            </div>
+        </form>
+        <div class="button">
+            <button *ngIf="showRegistration" class="btn-large" (click)="toggleRegistration()">
+                Anuluj Rejestrację
+            </button>
+        </div>
+    </div>
+</div>

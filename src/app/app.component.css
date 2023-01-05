@@ -1,0 +1,30 @@
+.app{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 60px;
+}
+.main{
+    height: calc(100% - 60px);
+}
+.nav{
+    float: left;
+    height: 100%;
+    width: 200px;
+}
+.contentWithNav{
+    float: left;
+    height: 100%;
+    width: calc(100% - 200px);
+}
+.contentWithoutNav{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+.footer{
+    height: 60px;
+}

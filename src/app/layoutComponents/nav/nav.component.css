@@ -1,0 +1,59 @@
+.nav_list {
+    height: calc(100% - 80px);
+}
+
+.add_video {
+    height: 80px;
+    width: 200px;
+}
+.add_video > .btn {
+    width: 200px;
+    height: 50%;
+}
+
+.collection_list {
+    overflow: auto;
+    height: 100%;
+    border: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #37474f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #263238;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111;
+}
+
+.collection_empty {
+    overflow: auto;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.empty {
+    margin-top: calc(50vh - 70px);
+}
+
+.collection_not_logged {
+    overflow: auto;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding-left: 35px;
+}
+
+.auth {
+    margin-top: calc(50vh - 70px);
+}
