@@ -24,6 +24,9 @@
 .search{
     width: 80%;
 }
+.search input{
+    color: white;
+}
 .btn-search{
     margin-left: 10px;
     width: 5%;

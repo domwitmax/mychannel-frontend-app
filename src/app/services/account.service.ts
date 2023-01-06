@@ -22,6 +22,7 @@ export class AccountService {
   }
   public async Login(login: Login): Promise<boolean> {
     const token = await this.http.post<string>(this.path + "Login", login).toPromise().catch(err => { });
+    console.log(token);
     if (token != undefined) {
       this.cookieService.set("token", token);
     }
