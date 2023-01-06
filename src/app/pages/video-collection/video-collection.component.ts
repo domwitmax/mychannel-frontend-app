@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoService } from 'src/app/services/video.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FullVideo } from 'src/app/models/Video/fullVideo';
 
 @Component({
@@ -10,7 +10,7 @@ import { FullVideo } from 'src/app/models/Video/fullVideo';
 })
 export class VideoCollectionComponent implements OnInit {
 
-  constructor(private videoService: VideoService, private activeRoute: ActivatedRoute) {
+  constructor(private videoService: VideoService,private router: Router, private activeRoute: ActivatedRoute) {
     this.subscriptionUserName = this.activeRoute.snapshot.paramMap.get('subscriptionUserName');
   }
   subscriptionUserName: string | null;
@@ -24,7 +24,9 @@ export class VideoCollectionComponent implements OnInit {
     }
     this.videoService.GetAllUserVideo(this.subscriptionUserName).subscribe((result) => {
       this.videos = result;
-    })
+    }, err => {
+      this.router.navigate([""]);
+    });
   }
 
 }

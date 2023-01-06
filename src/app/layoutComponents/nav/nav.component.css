@@ -44,6 +44,7 @@
 
 .empty {
     margin-top: calc(50vh - 70px);
+    color: white;
 }
 
 .collection_not_logged {
