@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
+## Project for engineering thesis
+
+MyChannel is a project created for an engineering thesis titled "Comparison of ASP.NET Web API and Minimal API based on a video streaming service." The project aims to compare the performance and efficiency of the two APIs.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -25,3 +29,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Author
+- Author: Dominik Witkowski (https://github.com/domwitmax)
